@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>Boston 311 Citizen Complaints</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+      }
+
+      #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+
+      </style>
+
+  </head>
+
+  <body>
+    <div id='map'></div>
+
+
+<!-- Initialize the map -->
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoiamF5ajk1MzQiLCJhIjoiY2tncmdzazk2MDBveTJxbzAwZmQ3cmh0cCJ9.pJl2gjXVXjTHcm04cvaxxQ';
+
+      // Initialize the basemap
+      var map = new mapboxgl.Map({
+        container: 'map', // container element id
+        style: 'mapbox://styles/jayj9534/ckgvdukth2n3919meirm4z8bf',
+        center: [-74.0060,40.7128], // initial map center in [lon, lat]
+        zoom: 12
+      });
+
+    </script>
+
+  </body>
+</html>
